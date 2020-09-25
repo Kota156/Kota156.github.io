@@ -206,7 +206,7 @@ main {
     
     .heading-image {
         
-        display:right;
+        display:none;
     }
     
     body {
@@ -236,7 +236,17 @@ main {
     .nav-bar a {
         padding:.5rem;
         width:inherit;
-
+        
+    }
+    
+    .alt-heading-image {
+        display:block;
+        grid-area:image;
+        margin:auto;
+    }
+    
+    .alt-heading-image img {
+        min-width:700px;
     }
     
     .main-content {
@@ -249,7 +259,7 @@ main {
             grid-area:footer;
             display:grid;
             grid-template-columns: 1fr 1fr;
-            grid-gap:4%;
+            grid-gap:3%;
     }
     
         .image-attribution :nth-child(2) {
@@ -257,7 +267,7 @@ main {
     }
 }
 
-@media (min-width:1500px){
+@media (min-width:1650px){
     
 
     .main-section {
@@ -265,9 +275,9 @@ main {
     }
     
     .gallery {
-        margin-top:3rem;
+        margin-top:5rem;
         display:grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         
     }
 }
