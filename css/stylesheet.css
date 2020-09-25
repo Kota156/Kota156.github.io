@@ -205,7 +205,8 @@ main {
 @media (min-width:1500px) {
     
     .heading-image {
-        
+        height: 100px
+        width: 100px
         display:right;
     }
     
